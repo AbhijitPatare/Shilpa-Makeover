@@ -1,24 +1,4 @@
-/*
 
-Beauty Template
-
-http://www.templatemo.com/tm-519-beauty
-
----------------------------------------
-
-COLORS
-primary: #CC9999;
-accent: #CEC0AE;
-accent dar: #786247;
-text dark: #333333;
-text light dark: #747474;
-
-header 1 mb: 25px;
-header 2 mb: 45px;
-header 3 mb: 35px;
-header 4 & 5 mb: 50px;
-others mb: 40px;
-*/
 
 body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -65,18 +45,36 @@ a.tm-text-light-dark:hover { color: #747474; }
 }
 
 .tm-logo {
-    width: 370px;
-    height: 370px;
-    background: url(../img/logo-bg.png) center no-repeat;
-    background-size: cover;
-    position: absolute;
-    right: -13%;
-    top: 18%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 100;
+  width: 370px;
+  height: 370px;
+  background: url(../img/logo-bg.png) center no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: -13%;
+  top: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Ensures text is centered */
+  z-index: 100;
 }
+
+.tm-site-name {
+  font-size: 24px;
+  color: white; /* Adjust color as needed */
+  max-width: 80%; /* Prevents text from overflowing */
+  word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+  .tm-logo {
+      width: 250px; /* Adjust size for smaller screens */
+      height: 250px;
+      right: 50%;
+      transform: translateX(50%);
+  }
+}
+
 
 .tm-welcome { display: flex; }
 
@@ -422,8 +420,8 @@ figure.effect-lexi figcaption::before, figure.effect-lexi p {
 
 @media (max-width: 1199px) {
   .tm-logo {
-    width: 300px;
-    height: 300px;
+    width: 314px;
+    height: 314px;
     top: 25%;
   }
 
@@ -446,9 +444,9 @@ figure.effect-lexi figcaption::before, figure.effect-lexi p {
 @media (max-width: 991px) {
   .tm-welcome { flex-direction: column-reverse; }
   .tm-logo {
-    top: -250px;
-    left: 0;
-    right: 0;
+    top: -295px;
+    left: -282px;
+    right: 8px;
     margin-left: auto;
     margin-right: auto;
   }
